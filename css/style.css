@@ -1,0 +1,145 @@
+.top {
+  height: 40vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../img/stats-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.budget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.budget-title {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.budget-value {
+  font-size: 35px;
+}
+.income-box {
+  margin-top: 20px;
+  height: 35px;
+  width: 300px;
+  padding: 10px;
+  background-color: #32bfac;
+  color: black;
+  text-transform: uppercase;
+}
+.expense-box {
+  margin-top: 20px;
+  height: 35px;
+  width: 300px;
+  padding: 10px;
+  background-color: #ff5049;
+  color: black;
+  text-transform: uppercase;
+}
+.budget-income-text {
+  float: left;
+}
+.budget-expense-text {
+  float: left;
+}
+
+.right {
+  float: right;
+  color: white;
+}
+.budget-income-value,
+.budget-expense-value {
+  margin-right: 85px;
+}
+.budget-expense-percent {
+  background-color: #a6a6a6;
+  font-size: 10px;
+  margin-top: -16px;
+  margin-right: -2px;
+  margin-left: 80px;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+.add-container {
+  padding: 20px;
+  text-align: center;
+  height: 65px;
+  background-color: #f6f5f7;
+}
+input,
+select {
+  height: 27px;
+  border: 1px solid #a6a6a6;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+.item {
+  margin-top: 10px;
+  border-top: 1px solid #a6a6a6;
+  padding: 8px;
+}
+.add-btn,
+.income-delete-btn,
+.expense-delete-btn {
+  border: 0px;
+}
+.add-btn {
+  font-size: 25px;
+  color: #32bfac;
+}
+.income-delete-btn {
+  font-size: 15px;
+  color: #32bfac;
+}
+.expense-delete-btn {
+  font-size: 15px;
+  margin-top: -16px;
+  margin-right: -2px;
+  margin-left: 110px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: #ff5049;
+}
+.incomes {
+  color: #32bfac;
+  margin-left: 170px;
+}
+.expenses {
+  color: #ff5049;
+  margin-left: 50px;
+  margin-right: 150px;
+}
+.item-right {
+  float: right;
+  color: #000;
+}
+.item-percentage-exp {
+  font-size: 11px;
+  color: #ff5049;
+  margin-top: -16px;
+  margin-right: -2px;
+  margin-left: 80px;
+  padding-right: 1px;
+  padding-left: 1px;
+  background-color: #fad1d5;
+}
+
+.income-description,
+.expense-description {
+  color: black;
+}
+.inc-value {
+  color: #32bfac;
+}
+.exp-value {
+  color: #ff5049;
+}
