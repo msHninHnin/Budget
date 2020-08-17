@@ -56,6 +56,7 @@
 .budget-expense-value {
   margin-right: 85px;
 }
+
 .budget-expense-percent {
   background-color: #a6a6a6;
   font-size: 10px;
@@ -80,6 +81,7 @@ select {
 }
 input:focus,
 select:focus {
+  border: 1px solid #32bfac;
   outline: none;
 }
 .item {
@@ -87,6 +89,7 @@ select:focus {
   border-top: 1px solid #a6a6a6;
   padding: 8px;
 }
+
 .add-btn,
 .income-delete-btn,
 .expense-delete-btn {
@@ -97,14 +100,21 @@ select:focus {
   color: #32bfac;
 }
 .income-delete-btn {
+  display: none;
+  margin-top: -16px;
   font-size: 15px;
   color: #32bfac;
+  margin-right: -2px;
+  margin-left: 50px;
+  padding-right: 1px;
+  padding-left: 1px;
 }
+
 .expense-delete-btn {
   font-size: 15px;
   margin-top: -16px;
   margin-right: -2px;
-  margin-left: 110px;
+  margin-left: 130px;
   padding-right: 1px;
   padding-left: 1px;
   color: #ff5049;
@@ -140,6 +150,15 @@ select:focus {
 .inc-value {
   color: #32bfac;
 }
+.inc-focus:focus {
+  transform: translateX(0, 0.3rem);
+}
 .exp-value {
   color: #ff5049;
+}
+.red {
+  color: red !important;
+}
+.red-focus:focus {
+  border: 1px solid red !important;
 }
