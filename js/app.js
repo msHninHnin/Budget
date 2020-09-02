@@ -270,7 +270,6 @@ var controller = (function (budgetCtrl, UICtrl) {
     document
       .querySelector(DOM.inputType)
       .addEventListener("change", UICtrl.changeType);
-    document.querySelector(DOM.container).addEventListener("click", animation);
   };
   var updateBudget = function () {
     budgetCtrl.calculateBudget();
@@ -313,10 +312,7 @@ var controller = (function (budgetCtrl, UICtrl) {
       updatePercentages();
     }
   };
-  var animation = function (event) {
-    document.querySelector(".inc-value").classList.add(".inc-focus");
-    document.querySelector(".income-delete-btn").style.display = "block";
-  };
+
   return {
     init: function () {
       console.log("Application stat!");

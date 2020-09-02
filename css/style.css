@@ -108,9 +108,11 @@ select:focus {
   margin-left: 50px;
   padding-right: 1px;
   padding-left: 1px;
+  transition: transform 0.3s;
 }
 
 .expense-delete-btn {
+  display: none;
   font-size: 15px;
   margin-top: -16px;
   margin-right: -2px;
@@ -118,6 +120,7 @@ select:focus {
   padding-right: 1px;
   padding-left: 1px;
   color: #ff5049;
+  transition: transform 0.3s;
 }
 .incomes {
   color: #32bfac;
@@ -128,10 +131,12 @@ select:focus {
   margin-left: 50px;
   margin-right: 150px;
 }
+
 .item-right {
   float: right;
   color: #000;
 }
+
 .item-percentage-exp {
   font-size: 11px;
   color: #ff5049;
@@ -141,6 +146,7 @@ select:focus {
   padding-right: 1px;
   padding-left: 1px;
   background-color: #fad1d5;
+  transition: transform 0.3s;
 }
 
 .income-description,
@@ -149,16 +155,33 @@ select:focus {
 }
 .inc-value {
   color: #32bfac;
+  transition: transform 0.3s;
 }
-.inc-focus:focus {
-  transform: translateX(0, 0.3rem);
-}
+
 .exp-value {
   color: #ff5049;
+  transition: transform 0.3s;
 }
 .red {
   color: red !important;
 }
 .red-focus:focus {
   border: 1px solid red !important;
+}
+
+.income-delete-btn:active,
+.expense-delete-btn:active {
+  transform: translateY(2px);
+}
+
+.item:hover .income-delete-btn,
+.item:hover .expense-delete-btn {
+  display: block;
+}
+.item:hover .inc-value,
+.item:hover .exp-value {
+  transform: translateX(-20px);
+}
+.item:hover .item__percentage-exp {
+  transform: translateX(-20px);
 }
